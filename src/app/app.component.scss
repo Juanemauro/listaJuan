@@ -6,9 +6,12 @@ body{
 
 /* CONTAINER */
 
+/* header del container */
+
 .container{
     padding: 2% 25% 10% 25%;
-    width: 40%;
+    width: 50%;
+    height: 100%;
 }
 
 .titulo-container{
@@ -29,6 +32,8 @@ body{
     border-radius: 40px;
 }
 
+/* ADD TASK */
+
 .add-task-container{
     display: flex;
     align-items: center;
@@ -36,11 +41,10 @@ body{
 }
 
 .search-bar{
-    width: 50%;
+    width: 70%;
     height: 15%;
     margin: 5% 2% /* espacio con el botón Add*/ 5% 2%;
-    text-align: center;
-    
+    padding-left: 5px;    
 }
 
 .button-add{
@@ -49,44 +53,65 @@ body{
     border-radius: 150px;
     color: white;
     font-weight: bolder;
-    width: 10%;
+    width: 20%;
     height: 15%;
 }
 
 /* TASKS */
 
+li{
+    list-style: none;
+}
+
+.task-lists{
+    /*background-color: pink;*/
+    width: 100%;
+}
+
 .task{
+    width: 100%;
+    /*background-color: antiquewhite;*/
     display: flex;
     align-items: center;
-    justify-items: flex-end;
+    justify-items: flex-start;
     justify-content: space-between;
-    width: 100%;
     border: 3px solid grey;
     border-radius: 5px;
-    margin-bottom: 1%;
-    padding-left: 2%;
-    padding-right: 2%;
 }
 
 .task-start{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 80%;
+    width: 90%;
+    /*background-color: red;*/
 }
 
 .task-name{
-    margin-left: 0.5%;
-    width: 100%;
+    margin-left: 5px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    width: 95%;
+    /*background-color: green;*/
+    word-wrap: break-word;
 }
 
 
+/* ACTIONS */
 
-.btn-delete{
+.actions{    
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+}
+
+.btn-delete, .btn-edit{
     background-color: #FF3131;  
-    margin-right: 1%; 
+    margin-right: 15%; 
+    width: 100%;
 }
 
+.btn-img-delete, .btn-img-edit{
+    width: 100%;
+    background-color: #FF3131;
+}
 /* SCSS */
