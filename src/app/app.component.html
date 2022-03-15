@@ -10,45 +10,8 @@
 
 <body>
   <navigation-bar></navigation-bar>
-  <div class="container">
-    <!-- HEADER -->
-    <div class="titulo-container">
-      <h1 class="titulo">
-        Lista de Tareas de {{nombre}}
-      </h1>
-      <img class="profile-image" src="assets/img/profile-image.JPG" alt="">
-    </div>
-    <!-- ADD TASK -->
-    <div class="add-task-container">
-      <input type="text" class="search-bar" placeholder="Escriba la tarea" #newTask>
-      <button class="button-add" (click)="addTask(newTask.value); newTask.value=''">ADD</button>
-    </div>
-    <!-- TASK LIST -->
-    <div class="task-lists">
-      <!--NG FOR PARA RECORRER ARREGLO DE TAREAS -->
-      <li *ngFor="let task of tasks">
-        <div class="task">
-          <!-- CHECKBOX & TASK-NAME -->
-          <div class="task-start">
-            <input type="checkbox" name="" id="" class="checkboxs">
-            <p class="task-name">{{task}}</p>
-          </div>
-          <div class="actions">
-            <!-- DELETE TASK -->
-            <button class="btn-edit"><img class="btn-img-edit" src="assets/img/edit_white_24dp.svg" alt=""></button>
-            <!-- (click)="editTask(task)" -->
-            <!-- DELETE TASK -->
-            <button class="btn-delete"><img class="btn-img-delete" src="assets/img/delete_black_24dp.svg" alt=""
-                (click)="deleteTask(task)"></button>
-          </div>
-
-        </div>
-      </li>
-      <!--END NGFOR -->
-    </div>
-    <!--END TASK LIST -->
-  </div>
-  <footer></footer>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
 </body>
 
 </html>

@@ -1,0 +1,12 @@
+<!-- HEADER -->
+<div class="titulo-container">
+    <h1 class="titulo">
+      Lista de Tareas de {{nombre}}
+    </h1>
+    <img class="profile-image" src="assets/img/profile-image.JPG" alt="">
+  </div>
+  <!-- ADD TASK -->
+  <div class="add-task-container">
+    <input type="text" class="search-bar" placeholder="Escriba la tarea" #newTask>
+    <button class="button-add" (click)="addTask(newTask.value); newTask.value=''">ADD</button>
+  </div>

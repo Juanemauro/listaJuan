@@ -1,0 +1,15 @@
+<div class="task">
+    <!-- CHECKBOX & TASK-NAME -->
+    <div class="task-start">
+      <input type="checkbox" name="" id="" class="checkboxs">
+      <p class="task-name">{{task.value}}</p>
+    </div>
+    <div class="actions">
+      <!-- DELETE TASK -->
+      <button class="btn-edit"><img class="btn-img-edit" src="assets/img/edit_white_24dp.svg" alt="" ></button> <!-- (click)="editTask(task)" -->
+      <!-- DELETE TASK -->
+      <button class="btn-delete"><img class="btn-img-delete" src="assets/img/delete_black_24dp.svg" alt=""
+          (click)="deleteTask(task)"></button> 
+    </div>
+  </div>
+  <!--END NGFOR -->
