@@ -1,0 +1,20 @@
+.footer-container{
+    background-color: #212121;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.right-center-section > p, .left-center-section > p{
+    color: grey;
+}
+
+h2{
+    color: white;
+}
+
+.vl{
+    border-left: 2px solid grey;
+    height: 150px;
+}
